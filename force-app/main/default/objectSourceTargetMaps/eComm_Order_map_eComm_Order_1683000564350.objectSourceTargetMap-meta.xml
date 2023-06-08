@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Order.store_number__c</sourceField>
+        <sourceFormula>Store Number</sourceFormula>
+        <targetField>eComm_Order__dll.store_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Order.customer_number__c</sourceField>
+        <sourceFormula>Customer Number</sourceFormula>
+        <targetField>eComm_Order__dll.customer_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Order.order_number__c</sourceField>
+        <sourceFormula>Order Number</sourceFormula>
+        <targetField>eComm_Order__dll.order_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Order.loyalty_points_accrued__c</sourceField>
+        <sourceFormula>Loyalty Points Accrued</sourceFormula>
+        <targetField>eComm_Order__dll.loyalty_points_accrued__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Order.status__c</sourceField>
+        <sourceFormula>Status</sourceFormula>
+        <targetField>eComm_Order__dll.status__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Order.order_date__c</sourceField>
+        <sourceFormula>Order Date</sourceFormula>
+        <targetField>eComm_Order__dll.order_date__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>env[&apos;filename&apos;]</sourceFormula>
+        <targetField>eComm_Order__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Order.total_amount__c</sourceField>
+        <sourceFormula>Total Amount</sourceFormula>
+        <targetField>eComm_Order__dll.total_amount__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>if(ISEMPTY(formulaField[&apos;order_date&apos;])) { null; } else { DAYPRECISION(formulaField[&apos;order_date&apos;]); }</sourceFormula>
+        <targetField>eComm_Order__dll.cdp_sys_PartitionDate__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>formulaField[&apos;Internal_Business_Unit&apos;]</sourceFormula>
+        <targetField>eComm_Order__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>&apos;S3_eCommerce_RAVG_Retail&apos;</sourceFormula>
+        <targetField>eComm_Order__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Order.delivery_method__c</sourceField>
+        <sourceFormula>Delivery Method</sourceFormula>
+        <targetField>eComm_Order__dll.delivery_method__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>&quot;eComm_RAVG_Retail&quot;</sourceFormula>
+        <targetField>eComm_Order__dll.Internal_Business_Unit__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>eComm_Order_map_eComm_Order_1683000564350</masterLabel>
+    <sourceObjectName>eComm_Order</sourceObjectName>
+    <targetObjectName>eComm_Order__dll</targetObjectName>
+</ObjectSourceTargetMap>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Standard</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>Standard</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Store_Number_Lookup__dll.store_number__c</sourceField>
+        <targetField>ssot__SalesStore__dlm.ssot__Id__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Standard</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Store_Number_Lookup__dll.store_number__c</sourceField>
+        <targetField>ssot__SalesStore__dlm.ssot__Name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Store_Number_Lookup__dll.DataSource__c</sourceField>
+        <targetField>ssot__SalesStore__dlm.ssot__DataSourceId__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Store_Number_Lookup__dll.DataSourceObject__c</sourceField>
+        <targetField>ssot__SalesStore__dlm.ssot__DataSourceObjectId__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Store_Number_Lookup__dll.InternalOrganization__c</sourceField>
+        <targetField>ssot__SalesStore__dlm.ssot__InternalOrganizationId__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>eComm_Store_Number_Lookup_map_SalesStore_1683097829958</masterLabel>
+    <sourceObjectName>eComm_Store_Number_Lookup__dll</sourceObjectName>
+    <targetObjectName>ssot__SalesStore__dlm</targetObjectName>
+</ObjectSourceTargetMap>

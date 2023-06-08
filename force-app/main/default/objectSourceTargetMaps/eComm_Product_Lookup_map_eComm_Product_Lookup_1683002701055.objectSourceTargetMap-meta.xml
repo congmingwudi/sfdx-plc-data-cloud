@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Product_Lookup.subtotal__c</sourceField>
+        <sourceFormula>Subtotal</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.subtotal__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>env[&apos;filename&apos;]</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Product_Lookup.related_activity__c</sourceField>
+        <sourceFormula>Related Activity</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.related_activity__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>&apos;S3_eCommerce_RAVG_Retail&apos;</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Product_Lookup.loyalty_points__c</sourceField>
+        <sourceFormula>Loyalty Points</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.loyalty_points__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Product_Lookup.sku__c</sourceField>
+        <sourceFormula>SKU</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.sku__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Product_Lookup.unit_price__c</sourceField>
+        <sourceFormula>Unit Price</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.unit_price__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <targetField>eComm_Product_Lookup__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Product_Lookup.order_line_number__c</sourceField>
+        <sourceFormula>Order Line Number</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.order_line_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Product_Lookup.order_number__c</sourceField>
+        <sourceFormula>Order Number</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.order_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Product_Lookup.quantity__c</sourceField>
+        <sourceFormula>Quantity</sourceFormula>
+        <targetField>eComm_Product_Lookup__dll.quantity__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>eComm_Product_Lookup_map_eComm_Product_Lookup_1683002701055</masterLabel>
+    <sourceObjectName>eComm_Product_Lookup</sourceObjectName>
+    <targetObjectName>eComm_Product_Lookup__dll</targetObjectName>
+</ObjectSourceTargetMap>

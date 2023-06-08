@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <description>Aggregated insights on customer spend from Sales Order data</description>
+    <expression>select
+        AVG(ssot__SalesOrder__dlm.ssot__GrandTotalAmount__c) as avgpurchasevalue__c,
+        SUM(ssot__SalesOrder__dlm.ssot__GrandTotalAmount__c) as lifetimevalue__c,
+        ssot__Individual__dlm.ssot__Id__c as customerid__c,
+        UnifiedIndividual__dlm.ssot__Id__c as unifiedid__c,
+        MAX(ssot__SalesOrder__dlm.ssot__GrandTotalAmount__c) as highestordervalue__c,
+        COUNT(ssot__SalesOrder__dlm.ssot__Id__c) as lifetimetransactionscount__c,
+        MIN(ssot__SalesOrder__dlm.ssot__GrandTotalAmount__c) as lowestordervalue__c 
+    from
+        ssot__SalesOrder__dlm 
+    join
+        IndividualIdentityLink__dlm 
+            on (
+                ssot__SalesOrder__dlm.ssot__SoldToCustomerId__c = IndividualIdentityLink__dlm.SourceRecordId__c
+            ) 
+    join
+        UnifiedIndividual__dlm 
+            on (
+                IndividualIdentityLink__dlm.UnifiedRecordId__c = UnifiedIndividual__dlm.ssot__Id__c
+            ) 
+    join
+        ssot__Individual__dlm 
+            on (
+                IndividualIdentityLink__dlm.SourceRecordId__c = ssot__Individual__dlm.ssot__Id__c 
+                AND IndividualIdentityLink__dlm.ssot__DataSourceObjectId__c = ssot__Individual__dlm.ssot__DataSourceObjectId__c
+            )
+    WHERE ssot__SalesOrder__dlm.ssot__SalesOrderStatusId__c = &apos;Completed&apos;
+    group by
+        unifiedid__c,
+        customerid__c</expression>
+    <masterLabel>Spend By Customer</masterLabel>
+</MktCalcInsightObjectDef>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <description>Identify number of source Individual records matched to a given Unified Individual profile</description>
+    <expression>SELECT IndividualIdentityLink__dlm.UnifiedRecordId__c as UnifiedRecordId__c
+     , IndividualIdentityLink__dlm.SourceRecordId__c as SourceRecordId__c
+     , SubQ.MatchesCount__c as MatchCount__c
+     , MIN(SubQ.MatchesCount__c) as Included__c
+  FROM IndividualIdentityLink__dlm
+  JOIN (
+SELECT IndividualIdentityLink__dlm.UnifiedRecordId__c as UID__c
+      , COUNT(IndividualIdentityLink__dlm.SourceRecordId__c) as MatchesCount__c
+  FROM IndividualIdentityLink__dlm
+ GROUP BY IndividualIdentityLink__dlm.UnifiedRecordId__c
+     ) as SubQ ON (IndividualIdentityLink__dlm.UnifiedRecordId__c = SubQ.UID__c)
+ GROUP BY UnifiedRecordId__c, SourceRecordId__c, MatchCount__c</expression>
+    <masterLabel>Unification Results</masterLabel>
+</MktCalcInsightObjectDef>

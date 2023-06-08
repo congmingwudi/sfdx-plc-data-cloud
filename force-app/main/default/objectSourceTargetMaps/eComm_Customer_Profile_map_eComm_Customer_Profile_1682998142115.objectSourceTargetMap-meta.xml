@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>CONCAT(sourceField[&apos;Customer Ref Number&apos;], &quot;_ContactPointEmail_&quot;, sourceField[&apos;Email&apos;])</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.Contact_Point_Email_Id__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>&quot;RAVG Retail Membership&quot;</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.Identification_Name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Customer_Profile.rewards_program_id__c</sourceField>
+        <sourceFormula>Rewards Program ID</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.rewards_program_id__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <targetField>eComm_Customer_Profile__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>&quot;Loyalty Program&quot;</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.Party_Identification_Type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>CONCAT(&quot;LoyaltyProgram_RAVGRetailMembership_&quot;, sourceField[&apos;Customer Ref Number&apos;])</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.Party_Identification_Id__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Customer_Profile.email__c</sourceField>
+        <sourceFormula>Email</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.email__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Customer_Profile.birth_date__c</sourceField>
+        <sourceFormula>Birth Date</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.birth_date__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>&apos;S3_eCommerce_RAVG_Retail&apos;</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Customer_Profile.customer_ref_number__c</sourceField>
+        <sourceFormula>Customer Ref Number</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.customer_ref_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Customer_Profile.surname__c</sourceField>
+        <sourceFormula>Surname</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.surname__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Customer_Profile.first_name__c</sourceField>
+        <sourceFormula>First Name</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.first_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>env[&apos;filename&apos;]</sourceFormula>
+        <targetField>eComm_Customer_Profile__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>eComm_Customer_Profile_map_eComm_Customer_Profile_1682998142115</masterLabel>
+    <sourceObjectName>eComm_Customer_Profile</sourceObjectName>
+    <targetObjectName>eComm_Customer_Profile__dll</targetObjectName>
+</ObjectSourceTargetMap>

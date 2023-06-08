@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <expression>SELECT
+      UnifiedIndividual__dlm.ssot__Id__c as UnifiedID__c ,
+      ssot__Individual__dlm.ssot__Id__c as CustomerID__c ,
+      ssot__SalesOrder__dlm.ssot__SalesStoreId__c as StorePurchasedFrom__c ,
+      COUNT(ssot__SalesOrder__dlm.ssot__Id__c) as TransactionsCount__c ,
+      FIRST (ssot__SalesOrder__dlm.ssot__SalesStoreId__c) as FirstStorePurchasedFrom__c 
+  FROM
+      ssot__SalesOrder__dlm 
+  JOIN
+      IndividualIdentityLink__dlm 
+          on ssot__SalesOrder__dlm.ssot__SoldToCustomerId__c = IndividualIdentityLink__dlm.SourceRecordId__c 
+  JOIN
+      UnifiedIndividual__dlm 
+          ON IndividualIdentityLink__dlm.UnifiedRecordId__c = UnifiedIndividual__dlm.ssot__Id__c 
+  JOIN
+      ssot__Individual__dlm 
+          ON IndividualIdentityLink__dlm.SourceRecordId__c = ssot__Individual__dlm.ssot__Id__c 
+  WHERE ssot__SalesOrder__dlm.ssot__SalesOrderStatusId__c = &apos;Completed&apos;
+  GROUP BY
+      UnifiedID__c,
+      CustomerID__c,
+      ssot__SalesOrder__dlm.ssot__SalesStoreId__c</expression>
+    <masterLabel>Customer Total Purchases by Store</masterLabel>
+</MktCalcInsightObjectDef>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Standard</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>Standard</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>Contact_00DDp0000016kkn__dll.RAVG_Loyalty_ID_c__c</sourceField>
+        <targetField>ssot__LoyaltyProgramMember__dlm.ssot__MembershipNumber__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>Contact_00DDp0000016kkn__dll.DataSource__c</sourceField>
+        <targetField>ssot__LoyaltyProgramMember__dlm.ssot__DataSourceId__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>Contact_00DDp0000016kkn__dll.DataSourceObject__c</sourceField>
+        <targetField>ssot__LoyaltyProgramMember__dlm.ssot__DataSourceObjectId__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Standard</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>Contact_00DDp0000016kkn__dll.Id__c</sourceField>
+        <targetField>ssot__LoyaltyProgramMember__dlm.ssot__Id__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>Contact_00DDp0000016kkn__dll.Id__c</sourceField>
+        <targetField>ssot__LoyaltyProgramMember__dlm.Individual_Id__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>Contact_00DDp0000016kkn_map_LoyaltyProgramMember_1683073140137</masterLabel>
+    <sourceObjectName>Contact_00DDp0000016kkn__dll</sourceObjectName>
+    <targetObjectName>ssot__LoyaltyProgramMember__dlm</targetObjectName>
+</ObjectSourceTargetMap>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataConnectorS3 xmlns="http://soap.sforce.com/2006/04/metadata">
+    <delimiter>,</delimiter>
+    <fileNameWildcard>S3 Customer Profile.csv</fileNameWildcard>
+    <importFromDirectory>ecommerce-data/</importFromDirectory>
+    <masterLabel>eComm_Customer_Profile</masterLabel>
+    <s3AccessKey>*</s3AccessKey>
+    <s3BucketName>rc-04.2023</s3BucketName>
+    <s3SecretKey>*</s3SecretKey>
+</DataConnectorS3>

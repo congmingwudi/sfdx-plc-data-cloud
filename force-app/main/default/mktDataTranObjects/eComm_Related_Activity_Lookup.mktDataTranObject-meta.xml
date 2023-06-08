@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktDataTranObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connector>AmazonS3_eComm_Related_Activity_Lookup</connector>
+    <creationType>Custom</creationType>
+    <dataSource>S3_eCommerce_RAVG_Retail</dataSource>
+    <dataSourceObject>eComm_Related_Activity_Lookup</dataSourceObject>
+    <masterLabel>eComm Related Activity Lookup</masterLabel>
+    <mktDataTranFields>
+        <fullName>loyalty_points</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Loyalty Points</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Loyalty Points</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>7</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>order_line_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Order Line Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Order Line Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>1</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>order_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Order Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Order Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>0</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>quantity</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Quantity</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Quantity</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>3</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>related_activity</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Related Activity</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Related Activity</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>6</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>sku</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>SKU</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>SKU</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>2</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>subtotal</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Subtotal</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Subtotal</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>5</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>unit_price</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Unit Price</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Unit Price</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>4</sequence>
+    </mktDataTranFields>
+    <objectCategory>Salesforce_SFDCReferenceModel_0_93.Related</objectCategory>
+</MktDataTranObject>

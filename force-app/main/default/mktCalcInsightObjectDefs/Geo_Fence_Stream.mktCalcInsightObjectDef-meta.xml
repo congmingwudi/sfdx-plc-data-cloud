@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <description>Streaming Insight to count the number of times an individual entered a geofence in the past 5 minutes</description>
+    <expression>SELECT COUNT ( Real_Time_Mobile_Events__dlm.MobileEngagement_geofenceStatus__c ) as entergeofence__c, 
+       UnifiedIndividual__dlm.ssot__Id__c as customerid__c, Real_Time_Mobile_Events__dlm.MobileEngagement_geofenceStatus__c as geofenceevent__c, 
+       WINDOW.START as start__c, 
+       WINDOW.END as end__c 
+  FROM Real_Time_Mobile_Events__dlm 
+  JOIN IndividualIdentityLink__dlm ON 
+       Real_Time_Mobile_Events__dlm.deviceId__c = IndividualIdentityLink__dlm.SourceRecordId__c 
+  JOIN UnifiedIndividual__dlm ON 
+       UnifiedIndividual__dlm.ssot__Id__c = IndividualIdentityLink__dlm.UnifiedRecordId__c 
+ GROUP BY window( Real_Time_Mobile_Events__dlm.dateTime__c ,&apos;5 MINUTE&apos;), 
+       customerid__c, 
+       geofenceevent__c</expression>
+    <masterLabel>Geo Fence Stream</masterLabel>
+</MktCalcInsightObjectDef>

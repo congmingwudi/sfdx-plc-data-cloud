@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>&apos;S3_eCommerce_RAVG_Retail&apos;</sourceFormula>
+        <targetField>eComm_Line_Item__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>env[&apos;filename&apos;]</sourceFormula>
+        <targetField>eComm_Line_Item__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>CONCAT(sourceField[&apos;Order Number&apos;]+&apos;_&apos;+ sourceField[&apos;Order Line Number&apos;])</sourceFormula>
+        <targetField>eComm_Line_Item__dll.Order_Line_Key__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Line_Item.order_line_number__c</sourceField>
+        <sourceFormula>Order Line Number</sourceFormula>
+        <targetField>eComm_Line_Item__dll.order_line_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Line_Item.loyalty_points__c</sourceField>
+        <sourceFormula>Loyalty Points</sourceFormula>
+        <targetField>eComm_Line_Item__dll.loyalty_points__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Line_Item.unit_price__c</sourceField>
+        <sourceFormula>Unit Price</sourceFormula>
+        <targetField>eComm_Line_Item__dll.unit_price__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Line_Item.subtotal__c</sourceField>
+        <sourceFormula>Subtotal</sourceFormula>
+        <targetField>eComm_Line_Item__dll.subtotal__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <targetField>eComm_Line_Item__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Line_Item.related_activity__c</sourceField>
+        <sourceFormula>Related Activity</sourceFormula>
+        <targetField>eComm_Line_Item__dll.related_activity__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Line_Item.sku__c</sourceField>
+        <sourceFormula>SKU</sourceFormula>
+        <targetField>eComm_Line_Item__dll.sku__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Line_Item.quantity__c</sourceField>
+        <sourceFormula>Quantity</sourceFormula>
+        <targetField>eComm_Line_Item__dll.quantity__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>eComm_Line_Item.order_number__c</sourceField>
+        <sourceFormula>Order Number</sourceFormula>
+        <targetField>eComm_Line_Item__dll.order_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>eComm_Line_Item_map_eComm_Line_Item_1683002265865</masterLabel>
+    <sourceObjectName>eComm_Line_Item</sourceObjectName>
+    <targetObjectName>eComm_Line_Item__dll</targetObjectName>
+</ObjectSourceTargetMap>

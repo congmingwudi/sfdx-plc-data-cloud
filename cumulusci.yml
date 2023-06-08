@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.75.1'
+project:
+    name: sfdx-plc-data-cloud
+    package:
+        name: sfdx-plc-data-cloud
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/sfdx-plc-data-cloud/tests
+            options:
+                outputdir: robot/sfdx-plc-data-cloud/results
+
+    robot_testdoc:
+        options:
+            path: robot/sfdx-plc-data-cloud/tests
+            output: robot/sfdx-plc-data-cloud/doc/sfdx-plc-data-cloud_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
